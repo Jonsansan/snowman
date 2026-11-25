@@ -1,4 +1,4 @@
-var snowmanParts = [
+let snowmanParts = [
 	".hat",
 	".face",
 	".scarf",
@@ -7,7 +7,7 @@ var snowmanParts = [
 	".body-middle",
 	".body-bottom",
 ];
-var randomWord = getRandomWord(words);
+var randomWord = getRandomWord();
 var keyboardContainer = document.querySelector("#keyboard-container");
 keyboardContainer.addEventListener("click", handleKeyboardClick);
 
@@ -28,10 +28,10 @@ function handleKeyboardClick(event) {
 	var hasMatch = checkForMatch(clickedLetter);
 
 	if (!hasMatch) {
-		// What function do we call??
+		checkForMatch(clickedLetter);
 		checkForLoser();
 	} else {
-		// What function do we call??
+		removeSnowmanPart();
 	}
 }
 
@@ -81,3 +81,5 @@ function getRandomWord(words) {
 // CHECK FOR LOSER FUNCTION HERE
 
 // CHECK FOR WINNER FUNCTION HERE
+
+console.log(getRandomWord);

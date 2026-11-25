@@ -2,7 +2,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Love+Ya+Like+A+Sister&display=swap");
 
 body {
-	background-image: url("/images/bg.png");
+	background-image: url("images/bg.png");
 	background-size: cover;
 }
 
